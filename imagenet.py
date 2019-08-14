@@ -101,7 +101,7 @@ def get_imagenet_iter_torch(type, image_dir, batch_size, num_threads, device_id,
 
 
 if __name__ == '__main__':
-    train_loader = get_imagenet_iter_dali(type='train', image_dir='/userhome/memory_data/imagenet', batch_size=256,
+    train_loader = get_imagenet_iter_dali(type='train', image_dir='/mnt/SSD/imagenet', batch_size=256,
                                           num_threads=4, crop=224, device_id=0, num_gpus=1)
     print('start iterate')
     start = time.time()
